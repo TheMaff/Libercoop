@@ -1,0 +1,67 @@
+header.header.shadow-sm
+
+    .container
+        .row
+            
+            nav(class="navbar navbar-expand-lg navbar-light col")
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div id="pencet">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.svg" alt="">
+                </a>
+
+                <button class="navbar-toggler navbar-toggler--login" type="button">
+                    <img src="../images/icon-user.svg" alt="">
+                </button>
+
+                .collapse.navbar-collapse(id="navbarSupportedContent")
+
+                    ul.navbar-nav.ml-auto.justify-content-end
+
+                        li.nav-item.active
+                            a.nav-link(href="index.html") Productos
+                            
+                        li.nav-item.dropdown
+                            a.nav-link.dropdown-toggle#navbarDropdownBeneficios(href="#",role="button",data-toggle="dropdown",aria-haspopup="true",aria-expanded="false") Beneficios
+
+                            .dropdown-menu(aria-labelledby="navbarDropdownBeneficios")
+                                .container
+                                    .row
+                                        .col-12.col-md-6
+                                            .row
+                                                a.dropdown-item(href="#") Beneficios
+                                                a.dropdown-item(href="#") Ser socio Cooperativo
+                                                a.dropdown-item(href="#")
+                                                    <small>empresas</small> Ser socio Cooperativo
+
+                                        .col-12.col-md-6
+                                            .row
+                                        
+                                                <div class="card">
+                                                    <img src="../images/img-credito-consumo@2x.jpg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Card title</h5>
+                                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                    </div>
+                                                </div>
+                        
+                        li.nav-item
+                            a.nav-link(href="#") Quiénes somos
+                        
+                        li.nav-item
+                            a.nav-link(href="#") Blog
+                                        
+                        li.nav-item
+                            a.nav-link(href="contacto.html") Contacto
+
+                        li.nav-item.d-none.d-md-block
+                            a.btn.btn-secondary.btn-sm(href="#") <img src="../images/icon-user.svg" alt=""> Ingresar
+                            
