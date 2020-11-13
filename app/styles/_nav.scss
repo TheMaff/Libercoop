@@ -40,7 +40,7 @@ nav {
 
         >.nav-link {
           color: $color-primary;
-          font-family: $font-black;
+          font-weight: 500;
         }
         
       }
@@ -49,6 +49,13 @@ nav {
         border: 0;
         border-radius: 0;
         padding: .2rem 0 .6rem;
+        @media only screen and (min-width: $screen-md-min) {
+          min-width: 571px;
+          border-radius: 0 0 5px 5px;
+          padding: 0;
+          padding-left: 1rem;
+          box-shadow: 0 10px 10px rgba(0, 0, 0, .075) !important;
+        }
         .dropdown-item{
           color: $color-base;
           padding: 1rem 0;
@@ -56,29 +63,54 @@ nav {
           font-size: 18px;
           line-height: 25px;
           @media only screen and (min-width: $screen-md-min) {
-            padding: 1rem 1.5rem;
+            padding: 1rem 0;
           }
           
         }
         .dropdown-item:focus,
         .dropdown-item:hover {
           color: $color-primary;
-          background-color: $color-light;
+          background-color: transparent;
         }
 
         &.show {
-          background-color: tomato;
 
           [class*="col-"] {
-            border-bottom: solid 1px $color-border;
+            // border-bottom: solid 1px $color-border;
             &:before {
-              content: '';
+              // content: '';
               position: absolute;
               border-bottom: solid 1px $color-base;
               width: 90%;
               left: 50%;
               bottom: -1px;
               transform: translate(-50%, 0);
+            }
+          }
+        }
+
+        .card {
+          border:0;
+          overflow: hidden;
+          border-radius: 10px;
+          
+          @media only screen and (min-width: $screen-md-min) {
+            margin: 1rem;
+            * {
+              text-align: center;
+            }
+          }
+          &-body {
+            background-color: $color-gray-light;
+          }
+          &-image {
+            img {
+              @media only screen and (max-width: $screen-md-min - 1) {
+                position: absolute;
+                width: auto;
+                max-width: 1000%;
+                height: 100%;
+              }
             }
           }
         }
