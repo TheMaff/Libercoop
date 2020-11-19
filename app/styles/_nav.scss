@@ -4,12 +4,19 @@ nav {
     color: $color-primary;
     content: none;
   }
-  
-  .navbar {
+  &.navbar {
     padding: .16rem 1rem;
     @media only screen and (min-width: $screen-md-min) {
-      padding: .5rem 1rem;
+      padding: .8rem 1rem;
     }
+  }
+  
+  .navbar {
+    // padding: .16rem 1rem;
+    // @media only screen and (min-width: $screen-md-min) {
+    //   padding: .8rem 1rem;
+    // }
+
     &-brand{
       max-width: 70%;
       margin: 0;
@@ -19,7 +26,7 @@ nav {
 
       .nav-item {
         margin: 0;
-        line-height: 1;
+        line-height: 41px;
       }
       
       .nav-link{
@@ -32,7 +39,7 @@ nav {
 
         padding: 1.1rem 0;
         @media only screen and (min-width: $screen-md-min) {
-          padding: .5rem 1rem;
+          padding: .5rem 1.7rem;
         }
       }
 
@@ -100,6 +107,7 @@ nav {
               text-align: center;
             }
           }
+          &-title {margin: 0;}
           &-body {
             background-color: $color-gray-light;
           }

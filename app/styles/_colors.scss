@@ -71,6 +71,10 @@ $color-gray-light: #efefef;
   &-light {
     color: $color-light !important;
   }
+
+  &-link {
+    color: $color-internal-link;
+  }
 }
 
 .bg {

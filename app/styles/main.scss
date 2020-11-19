@@ -115,9 +115,20 @@ body {
 
   a {
     color: $color-external-link;
+    font-size: 16px;
+    line-height: 25px;
     &:hover {
       text-decoration: none;
+      color: $color-internal-link;
       opacity: .8;
+    }
+    &.text-link{
+      text-decoration: underline;
+      font-family: $font-heavy;
+      display: block;
+      .svg-inline--fa {
+        font-size: 12px;
+      }
     }
   }
 
@@ -174,11 +185,11 @@ main {
       &::before {
         content: '';
         position: absolute;
-        height: 5px;
+        height: 6px;
         width: 72px;
         bottom: 0;
         background-color: $color-primary;
-        border-radius: 10em;
+        border-radius: 1em;
       }
     }
 
@@ -186,6 +197,7 @@ main {
       &--title {}
       &--content {}
     }
+
   }
 
   article {}
